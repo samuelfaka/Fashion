@@ -321,6 +321,22 @@ header {
 }
 
 @media screen and (max-width: 950px) {
+    .email a{
+        font-size: 15px;
+        color: white;
+        font-style: italic;
+    }
+    .email input{
+        border: none;
+        background: transparent;
+        outline: none;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        border-bottom: 2px solid white;
+        width: 60vw;
+        color: white;
+    }
     .product img {
         width: 100px;
         border-radius: 5px;
@@ -414,6 +430,7 @@ header {
     .big-1{
         position: absolute;
         right: 27%;
+        top: 70%;
     }
     .search{
         position: fixed;
