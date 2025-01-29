@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./style.css">
+      <!-- link to Boxicon -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+    <header>
+        <div class="input">
+            <input type="search" id="search" placeholder="Search">
+            <i class='bx bx-search' id="submit"></i>
+        </div>
+        <div class="categories">
+            <button class="category" data-category="men's clothing">Men's Clothing</button>
+            <button class="category" data-category="women's clothing">Women's Clothing</button>
+            <button class="category" data-category="jewelery">Jewelery</button>
+            <button class="category" data-category="electronics">Electronics</button>
+            <button class="category" data-category="all">All</button>
+            <button id="cart-icon">Carts</button>
+            <div>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- content -->
+                    <div class="cart-content">
+                    </div>
+
+                      <!-- total -->
+                      <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                     </div>
+                     <!-- buy -->
+                      <button type="button" class="btn-buy">Buy Now</button>
+ 
+                      <!-- cart-close -->
+                      <i class='bx bx-x' id="close-cart"></i>
+                   
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <main>
+        <div id="product-list" class="product-list"></div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

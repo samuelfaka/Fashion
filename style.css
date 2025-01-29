@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: hsl(198, 75%, 45%);
+    cursor: pointer;
+}
+
+.logo{
+    background-color: white;
+    width: 85%;
+    height: 90vh;
+    border-top-right-radius: 50rem;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.img-1 img{
+    height: 29vh;
+}
+
+.link img{
+    height: 4vh;
+    background-color: white;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+.link{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    right: 5%;
+    top: 10%;
+}
+
+.text-2 h2{
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 2px 1px gold;
+    font-style: italic;
+}
+
+.text-2 h1{
+    font-size: 80px;
+    text-align: right;
+    font-style: italic;
+    color: rgb(6, 80, 164);
+    text-decoration-line: underline;
+    text-shadow: 1px 2px 10px grey;
+}
+
+.text-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text p{
+    width: 30vw;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(6, 80, 164);
+}
+
+.text .up{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.text .up{
+    background-color:  rgb(6, 80, 164);
+    padding: 5px;
+    color: white;
+}
+
+.up h4{
+    background-color: white;
+    padding: 5px;
+    color: rgb(6, 80, 164);
+}
+
+.images-1{
+    position: absolute;
+    top: 21%;
+    left: 5%;
+}
+
+.images-1 img{
+    height: 70vh;
+    width: 25vw;
+}
+
+.ankara{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.ankara img{
+    height: 70vh;
+    width: 25vw;
+}
+
+.big-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.big-1{
+    position: absolute;
+    right: 12%;
+}
+
+.big p{
+    font-size: 13px;
+    font-style: italic;
+    color: white;
+    background-color: rgb(6, 80, 164);
+    padding: 2px;
+}
+
+.big h1{
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(6, 80, 164);
+    padding: 3px;
+    color: white;
+}
+
+.big{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 7%;
+    top: 87%;
+}
+
+.search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgb(192, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search div{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.search div a{
+    background-color: rgb(6, 80, 164);
+    color: white;
+    padding: 8px;
+    border-radius: 0.5rem;
+    font-size: 20px;
+}
+
+.search div a:hover{
+    background-color:  rgb(31, 125, 232);
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input input{
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    width: 40vw;
+    text-align: center;
+    border-bottom: 2px solid blue;
+    font-size: 13px;
+}
+
+.body{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+}
+
+.categories button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.categories button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart{
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 20px;
+    padding: 20px;
+}
+.product img {
+    width: 200px;
+    border-radius: 5px;
+}
+.product h3 {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 12px;
+    color: #666;
+}
+
+.product span {
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    gap: 10px;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email input{
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 2px solid white;
+    width: 20vw;
+    color: white;
+}
+
+.email a{
+    font-size: 10px;
+    color: white;
+    font-style: italic;
+}
+
+@media screen and (max-width: 950px) {
+    .product img {
+        width: 100px;
+        border-radius: 5px;
+    }
+    .logo{
+        background-color: white;
+        width: 99%;
+        height: 91vh;
+        border-top-right-radius: 50rem;
+    }
+    .img-1 img{
+        height: 19vh;
+    }
+    
+    .link img{
+        height: 3vh;
+        background-color: white;
+        padding: 5px;
+        border-radius: 0.5rem;
+    }
+    
+    .link{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        right: 5%;
+        top: 7%;
+    }
+    .text-2 h2{
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 1px 2px 1px gold;
+        font-style: italic;
+    }
+    
+    .text-2 h1{
+        font-size: 50px;
+        text-align: right;
+        font-style: italic;
+        color: rgb(6, 80, 164);
+        text-decoration-line: underline;
+        text-shadow: 1px 2px 10px grey;
+    }
+    .text p{
+        width: 90vw;
+        font-size: 11px;
+        text-align: center;
+        color: rgb(6, 80, 164);
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 22vh;
+    }
+    .images-1{
+        position: absolute;
+        top: 52%;
+        left: 0%;
+    }
+    
+    .images-1 img{
+        height: 40vh;
+        width: 55vw;
+    }
+    
+    .ankara{
+        position: absolute;
+        top: 51%;
+        right: 0%;
+    }
+    
+    .ankara img{
+        height: 40vh;
+        width: 55vw;
+    }
+    .number{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 11px;
+        position: absolute;
+        right: 2%;
+        top: 87%;
+        background-color: rgb(6, 80, 164);
+        padding: 2px;
+    }
+    .big-1{
+        position: absolute;
+        right: 27%;
+    }
+    .search{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+        background-color: white;
+        box-shadow: 1px 1px 20px rgb(192, 189, 189);
+    }
+        
+    .big p{
+        font-size: 11px;
+        font-style: italic;
+        color: white;
+        background-color: rgb(6, 80, 164);
+        padding: 2px;
+    }
+
+    .big h1{
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(6, 80, 164);
+        padding: 3px;
+        color: white;
+    }
+    .search{
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+        background-color: white;
+        box-shadow: 1px 1px 20px rgb(192, 189, 189);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .search div a{
+        background-color: rgb(6, 80, 164);
+        color: white;
+        padding: 9px;
+        border-radius: 0.5rem;
+        font-size: 22px;
+    }
+    .input input{
+        background: transparent;
+        outline: none;
+        padding: 10px;
+        width: 75vw;
+        text-align: center;
+        border-bottom: 2px solid blue;
+        font-size: 13px;
+    }
+    .categories {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .categories button {
+        padding: 7px 5px;
+        font-size: 11px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.cart.active{
+    right: 0;
+}
+
+.cart-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.cart img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.cart-quantity{
+    border: 1px solid black;
+    outline: red;
+    width: 3.4rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+}
+
+.cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.detail-box {
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 11px;
+
+}
+
+.cart-product-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
